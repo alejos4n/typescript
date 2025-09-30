@@ -66,3 +66,30 @@ interface Punto2 {
 
 const punto: Punto2 = {x: 10, y: 20};
 //lo anterior debe dar error pues es de solo lectura
+
+
+//otro ejemplo
+console.log("otro ejemplo");
+
+//creo una funcion de muestra
+function imprimirEtiqueta(etiqueta: {label: string}) {
+    console.log(etiqueta.label);
+}
+
+let miEtiqueta = {numero: 10, label: "Esta es la etiqueta"};
+imprimirEtiqueta(miEtiqueta);
+//console.log(imprimirEtiqueta(miEtiqueta));
+
+//reescribimos la función ahora con uan interface usaremos la funcion imprimirEtiqueta2 para no generar duplicado
+
+interface Etiqueta {
+    label: string;
+}
+
+function imprimirEtiqueta2(etiqueta: Etiqueta) {
+    console.log(etiqueta.label);
+}
+
+let miEtiqueta2 = {numero: 10, label: "Esta es mi etiquetaa"};
+
+imprimirEtiqueta2(miEtiqueta2);

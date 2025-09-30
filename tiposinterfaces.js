@@ -23,3 +23,16 @@ var libro1 = { titulo: "Typescrip básico" };
 var libro2 = { titulo: "Typescript avanzado", autor: "Pepito perez" };
 var punto = { x: 10, y: 20 };
 //lo anterior debe dar error pues es de solo lectura
+//otro ejemplo
+console.log("otro ejemplo");
+//creo una funcion de muestra
+function imprimirEtiqueta(etiqueta) {
+    console.log(etiqueta.label);
+}
+var miEtiqueta = { numero: 10, label: "Esta es la etiqueta" };
+imprimirEtiqueta(miEtiqueta);
+function imprimirEtiqueta2(etiqueta) {
+    console.log(etiqueta.label);
+}
+var miEtiqueta2 = { numero: 10, label: "Esta es mi etiquetaa" };
+imprimirEtiqueta2(miEtiqueta2);
