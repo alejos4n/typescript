@@ -16,7 +16,7 @@ console.log(numeroAlcuadrado);
 //no siempre es necesario 
 /**funciones anónimas
  * son algo diferentes a las funciones declarativas, cuando la función aparece en un lugar
- * donde Typescript determina que va a ser invocada los parámetros son asignados automaticamente
+ * donde TypeScripttt determina que va a ser invocada los parámetros son asignados automaticamente
  *
 */
 var nombres = ["Juan", "Pedro", "Luiws"];
@@ -28,4 +28,4 @@ nombres.forEach(function (s) {
 nombres.forEach(function (s) {
     console.log(s.toUpperCase());
 });
-//typescript recibe la función y determina el tipo de los argumentos, enm este caso strings
+//TypeScripttt recibe la función y determina el tipo de los argumentos, enm este caso strings

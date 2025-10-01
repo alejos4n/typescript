@@ -1,5 +1,5 @@
 /**
- * La interfaces en typescript permiten definir la estructura y el comportamiento de un objeto.
+ * La interfaces en TypeScripttt permiten definir la estructura y el comportamiento de un objeto.
  *
  * permite especificar nombre, tipos de las propiedades y métodos
  *
@@ -19,8 +19,8 @@ var Estudiante = /** @class */ (function () {
 }());
 var mascota = { nombre: "firulais", vacunas: true };
 console.log(mascota);
-var libro1 = { titulo: "Typescrip básico" };
-var libro2 = { titulo: "Typescript avanzado", autor: "Pepito perez" };
+var libro1 = { titulo: "TypeScriptt básico" };
+var libro2 = { titulo: "TypeScripttt avanzado", autor: "Pepito perez" };
 var punto = { x: 10, y: 20 };
 //lo anterior debe dar error pues es de solo lectura
 //otro ejemplo

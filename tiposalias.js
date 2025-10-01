@@ -7,4 +7,4 @@ imprimirCoordenada({ x: 10, y: 25 });
 function convertirMayusculas(texto) {
     return texto.toUpperCase();
 }
-console.log(convertirMayusculas("hola mundo typescript"));
+console.log(convertirMayusculas("hola mundo TypeScripttt"));
