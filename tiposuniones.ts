@@ -1,4 +1,4 @@
-/* los tipos de TypeScripttt permiten crear nuevos tipos usando una variedad de operadores*/
+/* los tipos de TypeScript permiten crear nuevos tipos usando una variedad de operadores*/
 
 /**La primera forma de combinar tipos es utilziando uniones.
  * los tipos que son parte de una unión se llaman miembros

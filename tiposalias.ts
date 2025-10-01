@@ -20,4 +20,4 @@ function convertirMayusculas(texto: string): TextoMayusculas {
     return texto.toUpperCase();
 }
 
-console.log(convertirMayusculas("hola mundo TypeScripttt"))
+console.log(convertirMayusculas("hola mundo TypeScript"))

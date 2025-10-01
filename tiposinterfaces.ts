@@ -1,5 +1,5 @@
 /**
- * La interfaces en TypeScripttt permiten definir la estructura y el comportamiento de un objeto.
+ * La interfaces en TypeScript permiten definir la estructura y el comportamiento de un objeto.
  * 
  * permite especificar nombre, tipos de las propiedades y métodos
  * 
@@ -52,8 +52,8 @@ interface Libro {
     autor?: string;
 }
 
-const libro1: Libro = {titulo: "TypeScriptt básico"};
-const libro2: Libro = {titulo: "TypeScripttt avanzado", autor: "Pepito perez"};
+const libro1: Libro = {titulo: "TypeScript básico"};
+const libro2: Libro = {titulo: "TypeScript avanzado", autor: "Pepito perez"};
 
 
 //propiedades de solo lectura
