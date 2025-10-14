@@ -12,14 +12,16 @@ let multiploTres: string = "fizz";
 let multiploCinco: string = "buzz";
 let multiploTresCinco: string = "fizzbuzz";
 
-//defino si es multiplo de tres
-let esMultiploTres: number;
-
-if (esMultiploTres % 3 === 0) {
-    console.log(multiploTres);
-}
-
 //muestro los nùmeros del 1 al 100
 for (let i: number = 0; i < 100; i++) {
-    console.log(`mostrando numeros del 1 al 100, número: ${i}`)}
-
+    //defino si es multiplo de tres
+    if (i % 3 === 0) {
+        console.log(multiploTres);
+    };
+    //defino si es multiplo de 5, sino, es multiplo de 3 y 5
+    if (i % 5 === 0) {
+        console.log(multiploCinco);
+    } else {
+        console.log(multiploTresCinco);
+    }
+}
