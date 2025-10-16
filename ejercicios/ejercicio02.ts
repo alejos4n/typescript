@@ -58,3 +58,30 @@ interface dividir{
 let miDivis: dividir = (a, b) => a / b;
 console.log("imprimiendo desde interface división");
 console.log(miDivis(434, 4354));
+
+//usando clases
+console.log("imprimiendo desde clases");
+
+class Calculadora {
+    sumar(a: number, b: number): number {
+        return a + b;
+    };
+    restar(a: number, b: number): number {
+        return a - b;
+    };
+    multiplica(a: number, b: number): number{
+        return a * b;
+    };
+    divide(a: number, b: number): number {
+        return a / b;
+    }
+}
+
+//instancio la clase
+const miCalculadora = new Calculadora();
+
+//uso los métodos de la clase
+console.log("suma:", miCalculadora.sumar(23, 56));
+console.log("Resta: ", miCalculadora.restar(234, 678));
+console.log("Multiplicar: ", miCalculadora.multiplica(44, 567));
+console.log("División: ", miCalculadora.divide(348, 78));
