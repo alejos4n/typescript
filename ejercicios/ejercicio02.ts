@@ -77,7 +77,7 @@ class Calculadora {
     }
 }
 
-//instancio la clase
+//instancio la clase, o sea, creo un objeto de ella
 const miCalculadora = new Calculadora();
 
 //uso los métodos de la clase
@@ -85,3 +85,28 @@ console.log("suma:", miCalculadora.sumar(23, 56));
 console.log("Resta: ", miCalculadora.restar(234, 678));
 console.log("Multiplicar: ", miCalculadora.multiplica(44, 567));
 console.log("División: ", miCalculadora.divide(348, 78));
+
+//usando la clase para no crear un objeto
+console.log("usando la clase para no crear un objeto");
+
+class Calculadora2 {
+    static sumar(a: number, b: number): number {
+        return a + b;
+    };
+    static restar(a: number, b: number): number {
+        return a - b;
+    };
+    static muliplicar(a: number, b: number): number {
+        return a * b;
+    };
+    static divide(a: number, b: number): number {
+        return a / b;
+    }
+}
+
+//uso sin instanciar
+console.log("uso sin instanciar de la clase");
+console.log("Suma:", Calculadora2.sumar(434, 87));
+console.log("Resta:", Calculadora2.restar(876, 5934783));
+console.log("Multiplicación:", Calculadora2.muliplicar(34, 657687));
+console.log("División:", Calculadora2.divide(98, 354));
