@@ -110,3 +110,36 @@ console.log("Suma:", Calculadora2.sumar(434, 87));
 console.log("Resta:", Calculadora2.restar(876, 5934783));
 console.log("Multiplicación:", Calculadora2.muliplicar(34, 657687));
 console.log("División:", Calculadora2.divide(98, 354));
+
+
+//extendiendo la clase Calculadora
+console.log("extendiendo la clase Calculadora");
+
+class CalculadoraMejorada extends Calculadora {
+    potencia(base: number, exponente: number): number {
+        return Math.pow(base, exponente);
+    }
+    raizCuadrada(num: number): number {
+        return Math.sqrt(num);
+    }
+    seno(grados: number): number {
+        const radianes = (grados * Math.PI) / 180;
+        return Math.sin(radianes);
+    }
+    coseno(grados: number): number {
+        const radianes = (grados * Math.PI) / 180;
+        return Math.cos(radianes);
+    }
+}
+
+//creamos una instancia del objeto
+const calCientifica = new CalculadoraMejorada();
+
+//muestro los nuevos métodos
+console.log("calculadora cientifica que extiende calculadora");
+
+console.log("Ptencia:", calCientifica.potencia(45, 453));
+console.log("Raíz cuadrada:", calCientifica.raizCuadrada(54645));
+console.log("Seno", calCientifica.seno(90));
+console.log("Coseno:", calCientifica.coseno(45));
+console.log("Suma:", calCientifica.sumar(45, 45)); //uso la suma que viene de calculadora pero invoco calcientifica
